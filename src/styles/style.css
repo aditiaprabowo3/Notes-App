@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f6f8fd;
+}
+
+header {
+  background-color: #fff;
+  padding: 12px 32px;
+  color: #5356ff;
+  box-shadow:
+    rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  position: sticky;
+  top: 24px;
+  z-index: 1000;
+  margin: 24px 24px 0px 24px;
+  border-radius: 48px;
+  border: 48px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-block: 32px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.title-section {
+  margin-top: 100px;
+}
+
+.container .title-section {
+  text-align: left;
+}
+
+.container .title-section-notes {
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+/* note container */
+.note-container .note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 2%;
+  row-gap: 24px;
+}
+
+.note-container .note-list .note-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.note-container.note-list .note-item .note-header .note-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001d3d;
+}
+
+.note-container .note-list .note-item .note-header .note-item-date {
+  font-size: 16px;
+  color: #414040d0;
+  padding-top: 2px;
+}
+
+.note-container .note-list .note-item .note-header .note-item-body {
+  font-size: 18px;
+  text-align: justify;
+  margin: 10px 0;
+  color: #001d3d;
+}
+
+.note-container .archive-notes:hover {
+  background-color: #389c0c;
+}
+
+.note-container .archive-notes{
+  background-color: #65B741;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.note-container .button-delete:hover {
+  background-color: #e3002f;  
+}
+
+.note-container .button-delete {
+  background-color: #FF204E;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  color: #fff;
+  cursor: pointer;
+}
